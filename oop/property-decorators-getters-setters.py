@@ -21,6 +21,7 @@ class Employee:
 
   @fullname.deleter
   def fullname(self):
+    print('Delete name!')
     self.first = None
     self.last = None
 
