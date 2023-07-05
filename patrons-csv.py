@@ -16,7 +16,6 @@ with open('patrons.csv', 'r') as file:
         names.append(f'{line[0]} {line[1]}')
 
 
-
 html += f'<p>There are currently {len(names)} contributers. Thank you!</p>'
 
 html += '\n<ul>\n'
@@ -27,4 +26,4 @@ for name in names:
 html += '<ul>\n'
 
 with open('patrons.html', 'w') as html_file:
-  html_file.write(html)
+    html_file.write(html)

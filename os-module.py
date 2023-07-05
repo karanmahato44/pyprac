@@ -22,7 +22,7 @@ homedir = os.environ.get('HOME')
 print(homedir)
 
 
-path = os.path.join(os.environ.get('HOME'), 'test.txt') # imp
+path = os.path.join(os.environ.get('HOME'), 'test.txt')  # imp
 print(path)
 
 
@@ -30,3 +30,7 @@ print(os.path.exists('/tmp/foo'))
 print(os.path.isdir('/tmp/'))
 print(os.path.isfile('/tmp/'))
 print(os.path.splitext('/tmp/foo.txt'))
+
+
+def foo(bar):
+    print(bar)

@@ -1,12 +1,11 @@
 class employee():
-  def __init__(self, name, age, salary):
-    self.name = name
-    self.age = age
-    self.salary = salary
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
 
-  def __repr__(self):
-      return f'{self.name} {self.age} {self.salary}'
-
+    def __repr__(self):
+        return f'{self.name} {self.age} {self.salary}'
 
 
 e1 = employee('lorem', '22', '44000')

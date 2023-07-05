@@ -1,8 +1,8 @@
 student = {
-  'name': 'kyto',
-  'age': 22,
-  'software': ['figma', 'photoshop'],
-  'langs': ['python', 'js']
+    'name': 'kyto',
+    'age': 22,
+    'software': ['figma', 'photoshop'],
+    'langs': ['python', 'js']
 }
 
 
@@ -27,4 +27,4 @@ print(student.items())
 # imp
 print('\n')
 for (key, value) in student.items():
-  print(f'{key} - {value}')
+    print(f'{key} - {value}')

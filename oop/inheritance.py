@@ -1,46 +1,39 @@
 class Employee:
-  def __init__(self, first, last, pay):
-    self.first = first
-    self.last = last
-    self.pay = pay
-    self.email = self.first + '.' + self.last + '@company.com'
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = self.first + '.' + self.last + '@company.com'
 
-  def fullname(self):
-    return f'{self.first} {self.last}'
-
+    def fullname(self):
+        return f'{self.first} {self.last}'
 
 
 class Developer(Employee):
-  def __init__(self, first, last, pay, lang):
-    super().__init__(first, last, pay)
-    self.lang = lang
-
-
+    def __init__(self, first, last, pay, lang):
+        super().__init__(first, last, pay)
+        self.lang = lang
 
 
 class Manager(Employee):
-  def __init__(self, first, last, pay, employees=None):
-    super().__init__(first, last, pay)
-    if employees is None:
-      self.employees = []
-    else:
-      self.employees  = employees
+    def __init__(self, first, last, pay, employees=None):
+        super().__init__(first, last, pay)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
 
-  def add_emp(self, emp):
-    if emp not in self.employees:
-      self.employees.append(emp)
+    def add_emp(self, emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
 
+    def remove_emp(self, emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
 
-  def remove_emp(self, emp):
-    if emp in self.employees:
-      self.employees.remove(emp)
-
-
-  def print_emp(self):
-    for emp in self.employees:
-      print('-->', emp.fullname())
-
-
+    def print_emp(self):
+        for emp in self.employees:
+            print('-->', emp.fullname())
 
 
 dev1 = Developer('karan', 'mahato', 40000, 'python')

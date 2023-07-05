@@ -8,9 +8,6 @@ import os
 import antigravity
 
 
-
-
-
 langs = ['js', 'py', 'c', 'java', 'go', 'swift', 'dart']
 
 

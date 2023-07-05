@@ -11,7 +11,7 @@ print(f'today is: {today}')
 print(f'birthday at: {today}')
 print(f'birthday after: {till_bday}')
 
-print(datetime.datetime.today()) # not time zoneaware
+print(datetime.datetime.today())  # not time zoneaware
 
 # for timezone aware datetimes, intall pytz
 

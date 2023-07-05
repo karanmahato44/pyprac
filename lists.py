@@ -23,14 +23,14 @@ for i in range(len(langs) - 1, -1, -1):
 print(reversed)
 print(langs[::-1])
 
-nums.reverse() # modifies the og list
+nums.reverse()  # modifies the og list
 print(nums)
 
 
 # sorting
-langs.sort() # asc            sort() method, modifies og 
+langs.sort()  # asc            sort() method, modifies og
 print(langs)
-langs.sort(reverse=True) # dec
+langs.sort(reverse=True)  # dec
 print(langs)
 
 print(sorted(nums))          # sort fn, returns new list
@@ -42,3 +42,7 @@ print(sum(nums))
 print(langs.index('javascript'))
 print('python' in langs)
 print('python' not in langs)
+
+
+print('zeros', [0] * 100)
+print(list(range(1, 100)))
