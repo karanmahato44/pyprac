@@ -13,6 +13,6 @@ nums = {1, 2, 3, 4, 5, 'foo'}
 # sets are optimized for testing if present or absent
 print('karan' in names)
 
-print(names.union(nums))
-print(names.intersection(nums))
-print(names.difference(nums))
+print(names.union(nums))  # same as names | nums
+print(names.intersection(nums))  # names & nums
+print(names.difference(nums))  # names ^ nums
